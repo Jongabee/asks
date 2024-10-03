@@ -8,6 +8,6 @@ export const checkAskExists = async (itemId: string): Promise<boolean> => {
   return !!item;
 };
 
-export const getProductsService = async (): Promise<Ask[]> => {
+export const getAsksService = async (): Promise<Ask[]> => {
   return await AskRepository.find();
 };

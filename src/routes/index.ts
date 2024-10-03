@@ -4,7 +4,7 @@ import asksRouter from "./asks.Router";
 
 const router = Router();
 
-router.use("/users", usersRouter);
 router.use("/asks", asksRouter);
+router.use("/users", usersRouter);
 
 export default router;

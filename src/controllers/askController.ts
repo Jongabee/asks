@@ -1,10 +1,10 @@
 import { Request, Response } from "express";
 import { catchedController } from "../utils/catchedController";
-import { getProductsService } from "../services/asksService";
+import { getAsksService } from "../services/asksService";
 
 export const getAsks = catchedController(
   async (req: Request, res: Response) => {
-    const products = await getProductsService();
-    res.json(products);
+    const asks = await getAsksService();
+    res.json(asks);
   }
 );
